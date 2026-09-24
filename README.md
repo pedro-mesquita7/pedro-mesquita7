@@ -5,7 +5,7 @@ I build data platforms that are **cheap to run, easy to trust, and boring in pro
 **What I can do for your team**
 
 - **Get data out of SAP** (ECC / S/4HANA) and into a modern lakehouse: incremental loads, CDC, and the SAP quirks handled (leading zeros, `00000000` dates, currency decimal shifts)
-- **Cut platform cost**: I replaced ~€60k of Talend licensing with a pipeline stack that costs ~€150/month on AWS
+- **Cut platform cost**: I'm leading a migration off ~€60k of Talend licensing onto an AWS stack targeting ~€150/month (in progress)
 - **Make pipelines visible**: with only 2 Talend licenses for 3 teams, I built a self-service monitoring app (Streamlit behind Nginx) so everyone on the VPN can check job health
 - **Ship it properly**: infrastructure as code, CI/CD, tests, data-quality checks, and docs people actually read
 
@@ -14,9 +14,9 @@ I build data platforms that are **cheap to run, easy to trust, and boring in pro
 | Project | What it shows | Stack |
 |---|---|---|
 | [**SAP → Iceberg Lakehouse**](https://github.com/pedro-mesquita7/sap-iceberg-lakehouse) · [live docs](https://pedro-mesquita7.github.io/sap-iceberg-lakehouse/) | SAP Order-to-Cash data with ODP-style CDC into Iceberg: SAP format quirks handled, SCD2 from change events, enforced contracts. One command runs it. | Iceberg · dbt · Dagster · DuckDB · GitHub Actions |
-| [**IronLog**](https://github.com/pedro-mesquita7/IronLog) · [live app](https://pedro-mesquita7.github.io/IronLog/) | A serverless PWA with a CDC data lake behind it, built entirely in Terraform. It runs for **~€0.07/month**. | AWS Lambda · DynamoDB Streams · S3 · dbt + Athena · Terraform · React |
+| [**IronLog**](https://github.com/pedro-mesquita7/IronLog) | A serverless PWA with a CDC data lake behind it, built entirely in Terraform and designed to run for **~€0.07/month**. | AWS Lambda · DynamoDB Streams · S3 · dbt + Athena · Terraform · React |
 | [**OpenClaw Security Lakehouse**](https://github.com/pedro-mesquita7/openclaw-security-lakehouse) | A medallion lakehouse with SCD Type 2 history, risk scoring and a dashboard that refreshes daily | Databricks · Delta Lake · PySpark · Asset Bundles · GitHub Actions |
-| [**Portfolio site**](https://pedro-mesquita7.github.io/pm-portfolio/) | Work projects, impact metrics, resume | HTML · CSS · JS |
+| [**Portfolio site**](https://pedro-mesquita7.github.io/pm-portfolio/) | Services, work projects and their impact | HTML · CSS · JS |
 
 ### Tech stack
 
